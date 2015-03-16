@@ -33,7 +33,7 @@ opts.src = {
     ],
     app: [
       'bower_components/jquery/dist/jquery.js',
-      'bower_components/bootstrap/js/dropdown.js',
+      'bower_components/bootstrap/js/*.js',
       'app/scripts/app.js'
     ]
   },
