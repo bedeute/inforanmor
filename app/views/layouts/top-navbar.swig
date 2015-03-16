@@ -26,7 +26,8 @@
 		<ul class="nav navbar-nav navbar-right">
 			<li><a href="#">About</a></li>
 			<li class="active"><a href="#">Daftar RanMor</a></li>
-			<li><a href="#">Signin</a></li>
+      <li><a href="#">Signin</a></li>
+			<li style="color: #fff; padding: 14px 0;">|</li>
 			<li><a href="#">Daftar</a></li>
 		</ul>
 	</div>
