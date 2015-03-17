@@ -4,54 +4,51 @@ body {
   font-family: @base-font-family;
 }
 
-// header style
-.header {
 
-  &.landing-page {
-    background: #4B525C url(/images/landing-page-bg.jpg) no-repeat center top;
-    .background-size(cover);
+
+.signin-form {
+  background-color: #f9f9f9;
+  border: 1px solid #fff;
+  padding-bottom: 0;
+  padding-top: 12px;
+  border-top-left-radius: 4px !important;
+  border-top-right-radius: 4px !important;
+  min-width: 175px;
+
+  &:before {
+    content: '';
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-
-    & > .navbar {
-      padding-top: 16px;
-      padding-right: 40px;
-      padding-left: 40px;
-      margin-bottom: -100px;
-      height: 200px;
-      #gradient > .vertical(#434A54, transparent, 10%, 100%);
-
-      & .navbar-nav {
-        margin-top: 10px;
-
-        & > li > a {
-          font-family: 'Dosis';
-          font-size: 16px;
-          text-transform: uppercase;
-          color: #ffffff;
-          padding-left: 24px;
-          padding-right: 24px;
-          background-color: transparent;
-
-          &:hover,
-          &:focus {
-            color: #DB4453;
-          }
-        }
-
-      }
-    }
+    border: 10px solid transparent;
+    border-color: transparent transparent #f9f9f9 transparent;
+    top: -20px;
+    right: 25px;
   }
 
+  > form {
+
+    > .form-group,
+    > .signin-submit {
+      padding-right: 12px;
+      padding-left: 12px;
+    }
+
+    label {
+      color: @main-accent;
+    }
+
+    > .signin-submit {
+      background-color: #f7f0f1;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      border-top: 1px solid #ECE4E5;
+    }
+  }
 }
 
 // top-navbar-logo
 .top-navbar-logo {
   padding: 0;
-  margin-top: 15px;
+  margin-top: 12px;
   margin-left: 12px;
 
   & > svg {
@@ -72,7 +69,6 @@ body {
 // landing page header content style
 .landing-page-inner {
   position: relative;
-  margin-top: 100px;
 }
 
 .landing-page-imagery {
@@ -89,10 +85,9 @@ body {
 
 .landing-page-body {
   .pull-left();
-  padding-top: 120px;
+  padding-top: 140px;
   padding-right: 100px;
   padding-left: 100px;
-  font-family: 'Dosis';
   font-size: 18px;
   width: 55%;
   color: #fff;
@@ -102,6 +97,11 @@ body {
     font-weight: 100;
   }
 
+
+}
+.landing-page-body,
+.searchbar {
+
   input {
     border-color: @main-accent;
 
@@ -110,7 +110,6 @@ body {
       box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(219, 68, 83, 0.5);
     }
   }
-
 }
 
 .landing-page-logo {
@@ -119,6 +118,25 @@ body {
 
   & path {
     fill: #fff;
+  }
+}
+
+// daftar ranmor style
+.searchbar {
+  min-height: 100px;
+  background-color: #434a54;
+  color: #fff;
+  border-bottom: 3px solid #ddd;
+
+  > .container {
+    padding-top: 25px;
+    border-top: 1px solid #4a515b;
+  }
+
+  label {
+    font-size: 22px;
+    float: right;
+    padding-top: 7px;
   }
 }
 

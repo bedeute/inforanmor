@@ -1,4 +1,4 @@
-{% extends "master.swig" %}
+{% extends "landing-page.swig" %}
 
 {% block head %}
   {% parent %}

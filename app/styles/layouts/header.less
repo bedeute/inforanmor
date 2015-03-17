@@ -1,0 +1,75 @@
+.header {
+  background-color: #434a54;
+
+  & > .navbar {
+    margin-bottom: 0;
+    height: 70px;
+    border-bottom: 1px solid #3b414a;
+
+    & .navbar-nav {
+      margin-top: 10px;
+
+      & > li > a {
+        font-family: 'Dosis';
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #ffffff;
+        padding-left: 24px;
+        padding-right: 24px;
+        background-color: transparent;
+
+        &:hover,
+        &:focus {
+          color: #DB4453;
+        }
+      }
+
+    }
+  }
+}
+
+.landing-page  {
+  background: #4B525C url(/images/landing-page-bg.jpg) no-repeat center top;
+  .background-size(cover);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  .header {
+    background-color: transparent;
+    #gradient > .vertical(#434A54, transparent, 10%, 100%);
+
+    & > .navbar {
+      border-color: transparent;
+      padding-top: 16px;
+      padding-right: 60px;
+      padding-left: 60px;
+      margin-bottom: -100px;
+      height: 200px;
+      width: 100%;
+
+      & .navbar-nav {
+        margin-top: 10px;
+
+        & > li > a {
+          font-family: 'Dosis';
+          font-size: 16px;
+          text-transform: uppercase;
+          color: #ffffff;
+          padding-left: 24px;
+          padding-right: 24px;
+          background-color: transparent;
+
+          &:hover,
+          &:focus {
+            color: #DB4453;
+          }
+        }
+
+      }
+    }
+  }
+
+}
