@@ -4,7 +4,31 @@ body {
   font-family: @base-font-family;
 }
 
+// space helper
+.space-help {
 
+  &-30 {
+    height: 30px;
+  }
+}
+
+// dive
+// for better vertical alignment
+//---------------------------
+.dive {
+  display: table;
+
+  > .pull-left {
+    display: table-cell;
+    vertical-align: top;
+    margin-right: 20px;
+  }
+
+  > .dive-body {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
 
 .signin-form {
   background-color: #f9f9f9;
@@ -121,6 +145,34 @@ body {
   }
 }
 
+// alarm
+//-----------------------
+.alarm {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 16px;
+  border-left-width: 4px;
+  border-right-width: 4px;
+
+  > .dive {
+
+    > .pull-left {
+      vertical-align: middle;
+
+      > .fa {
+        font-size: 60px;
+      }
+  }
+
+    > .dive-body {
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
 // daftar ranmor style
 .searchbar {
   min-height: 100px;
@@ -137,6 +189,40 @@ body {
     font-size: 22px;
     float: right;
     padding-top: 7px;
+  }
+}
+
+// result detail
+.result-detail {
+  &:extend(.clearfix all);
+
+  label {
+    font-weight: 100;
+    font-size: 16px;
+    margin-bottom: 2px;
+  }
+
+  h1, h3, h4 {
+    margin-top: 0px;
+    margin-bottom: 18px;
+    font-weight: 600;
+  }
+
+  h4 {
+    font-weight: 400;
+  }
+
+}
+
+.result-detail-inline {
+
+  > section {
+    display: inline-block;
+    margin-left: 16px;
+
+    &:first-child {
+      margin-left: 0;
+    }
   }
 }
 

@@ -7,7 +7,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a href="#" class="navbar-brand top-navbar-logo">
+      <a href="index.html" class="navbar-brand top-navbar-logo">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="192.871px" height="53.076px" viewBox="0 0 192.871 53.076" enable-background="new 0 0 192.871 53.076" xml:space="preserve">
         <path d="M6.369 2.656L5.246 6.025H3V2.656H6.369z M6.369 19.502V7.148H3v12.354H6.369z"/>
         <path d="M20.115 19.502V9.395c0-1.498 0.748-2.246 2.244-2.246h8.988c1.496 0 2.2 0.7 2.2 2.246v10.107h-3.357 l-0.012-8.984h-6.738v8.984H20.115z"/>
@@ -26,7 +26,7 @@
     <div class="collapse navbar-collapse" id="top-navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">About</a></li>
-        <li class="active"><a href="#">Daftar RanMor</a></li>
+        <li class="active"><a href="search-result.html">Daftar RanMor</a></li>
         <li class="dropdown">
           <a href="#" data-toggle="dropdown" id="signin">Signin</a>
           <div class="dropdown-menu signin-form" role="menu" aria-labelledby="signin">
