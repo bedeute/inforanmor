@@ -2,8 +2,8 @@
 
 {% block head %}
   {% parent %}
-    <meta name="description" content="{{ meta.index.description }}">
-    <meta name="keywords" content="{{ meta.index.keywords }}">
+    <meta name="description" content="{{ meta.result.description }}">
+    <meta name="keywords" content="{{ meta.result.keywords }}">
     <title>{{ meta.index.title }}</title>
 {% endblock %}
 

@@ -9,6 +9,16 @@
       "title": "Inforanmor :: Home",
       "description": "Awesome project.",
       "keywords": "html5, css3, Inforanmor"
+    },
+    "result": {
+      "title": "Inforanmor :: Result",
+      "description": "Awesome project.",
+      "keywords": "html5, css3, Inforanmor"
+    },
+    "daftar": {
+      "title": "Inforanmor :: Daftar",
+      "description": "Awesome project.",
+      "keywords": "html5, css3, Inforanmor"
     }
   }
 }

@@ -2,9 +2,9 @@
 
 {% block head %}
   {% parent %}
-    <meta name="description" content="{{ meta.index.description }}">
-    <meta name="keywords" content="{{ meta.index.keywords }}">
-    <title>{{ meta.index.title }}</title>
+    <meta name="description" content="{{ meta.daftar.description }}">
+    <meta name="keywords" content="{{ meta.daftar.keywords }}">
+    <title>{{ meta.daftar.title }}</title>
 {% endblock %}
 
 {% block main %}
@@ -45,7 +45,37 @@
 </div>
 <div class="mainbar">
   <div class="container">
-
+    <div class="tblhead clearfix">
+      <span class="tblhead-cal">Tanggal</span>
+      <div class="tblwrap">
+        <span class="tblhead-desc">Keterangan</span>
+        <span class="tblhead-char">Ciri Khusus</span>
+      </div>
+      <span class="tblhead-act">Action</span>
+    </div>
+    <div class="tbllist clearfix">
+      <div class="tbllist-cal">
+        8 April <span>2014</span>
+      </div>
+      <div class="tblwrap">
+        <div class="tbllist-desc">
+          <label>L 899 JS</label>
+          <span>Toyota</span>
+          <label>Kijang Innova</label>
+            <p>
+              kehilangan mobil kijang inova seri V silver metalik,nomor mesin : 2KDU123684, nomor rangka : MHFXR43G1C1009667, di surabaya daerah darmo tanggal 21 Februari 2015 pagi sekitar jam 2-3. HADIAH BESAR bagi yang menemukannya.
+            </p>
+        </div>
+        <div class="tbllist-char">
+          <p>
+            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+          </p>
+        </div>
+      </div>
+      <div class="tbllist-act">
+        <button type="button" class="btn btn-primary">Kasih Info</button>
+      </div>
+    </div>
   </div>
 </div>
 {% endblock %}
