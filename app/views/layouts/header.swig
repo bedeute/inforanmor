@@ -25,7 +25,7 @@
     </div>
     <div class="collapse navbar-collapse" id="top-navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">About</a></li>
+        <li><a href="#" class="sidebar-toggle">About</a></li>
         <li class="active"><a href="daftar.html">Daftar RanMor</a></li>
         <li class="dropdown">
           <a href="#" data-toggle="dropdown" id="signin">Signin</a>

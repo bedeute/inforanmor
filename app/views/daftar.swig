@@ -8,9 +8,10 @@
 {% endblock %}
 
 {% block main %}
-<div class="sidebar">
+<div class="sidebar shrink">
   <div class="sidebar-inner">
-    <h3>Filter:</h3>
+    <a href="#" class="sidebar-toggle"><i class="fa fa-chevron-left"></i></a>
+    <h3 style="margin-top: 2px;">Filter:</h3>
     <hr>
     <h3>Type</h3>
     <label><a href="#">Toyota</a></label>
