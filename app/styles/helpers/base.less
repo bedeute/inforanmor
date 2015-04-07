@@ -176,7 +176,7 @@ body {
 // daftar ranmor style
 .searchbar {
   min-height: 100px;
-  background-color: #434a54;
+  background-color: @dark-bg-color;
   color: #fff;
   border-bottom: 3px solid #ddd;
 
@@ -259,7 +259,7 @@ body {
   margin-top: 0;
   width: 200px;
   color: #d8dee7;
-  background-color: #434a54;
+  background-color: @dark-bg-color;
   .transition(all 0.2s ease);
 
   hr {
@@ -272,6 +272,21 @@ body {
   &.shrink {
     .translate(-190px,0);
     &+.mainbar{margin-left: 10px;}
+
+    .sidebar-toggle {
+      left: 190px;
+      .opacity(0.5);
+      text-shadow: 0 -1px rgba(255, 255, 255, 0.2);
+
+      > i.fa {
+        .transition(transform 0.5s ease 0.2s);
+        .rotate(180deg);
+      }
+
+      &:hover {
+        .opacity(0.9);
+      }
+    }
   }
   &.reveal {
     .translate(0,0);
@@ -279,7 +294,7 @@ body {
 
   .sidebar-inner {
     padding: 12px;
-    background-color: #434a54;
+    background-color: @dark-bg-color;
 
     > label,
     > label > a {
@@ -327,7 +342,7 @@ body {
   left: 0;
   width: 200px;
   padding: 22px 12px 22px;
-  #gradient > .vertical(transparent, #434a54, 0%, 25%);
+  #gradient > .vertical(transparent, @dark-bg-color, 0%, 25%);
 }
 
 .sidebar-toggle {
@@ -335,22 +350,32 @@ body {
   position: fixed;
   width: 32px;
   height: 32px;
-  left: 175vpx;
+  left: 156px;
   border-radius: 6px;
-  background-color: #434a54;
-  border: 1px solid darken(#434a54, 3%);
+  background-color: @dark-bg-color;
+  border: 1px solid darken(@dark-bg-color, 3%);
   .box-shadow(0 0 2px rgba(0, 0, 0, 0.2));
   text-align: center;
   line-height: 32px;
   color: #333B45;
   text-shadow: 0 1px rgba(255, 255, 255, 0.2);
+
+  &:hover,
+  &:focus {
+    color: #333B45;
+    background-color: lighten(@dark-bg-color, 2%);
+  }
+
+  > i.fa {
+    .transition(transform 0.5s ease 0.2s);
+  }
 }
 
 // Mainbar (main content beside sidebar)
 //-------------------------
 .mainbar {
   margin-left: 200px;
-  .transition(all 0.4s ease);
+  .transition(all 0.3s ease);
 
   > .container {
     width: 100%;
@@ -362,39 +387,12 @@ body {
   display: block;
   width: auto;
   margin-left: 90px;
-  margin-right: 123px;
-}
+  margin-right: 110px;
 
-
-.tblhead-cal,
-.tbllist-cal {
-  width: 90px;
-  float: left;
-}
-
-.tblhead-desc,
-.tbllist-desc {
-  width: 40%;
-}
-
-.tblhead-char,
-.tbllist-char {
-  width: 60%;
-}
-
-.tblhead-act,
-.tbllist-act {
-  width: 123px;
-  float: right;
-}
-
-.tbllist {
-
-  [class^="tbllist-"] {
-    float: left;
+  p {
+    color: #333;
   }
 }
-
 
 .tblhead {
   border-bottom: 2px solid #eee;
@@ -410,6 +408,89 @@ body {
   }
 }
 
+.tbllist {
+  display: table-row;
+
+  > .tblwrap {
+    display: table-cell;
+  }
+
+  &-act,
+  &-cal {
+    vertical-align: middle;
+  }
+
+  &-char,
+  &-desc {
+    float: left;
+  }
+}
+
+.tbllist-cal,
+.tbllist-act {
+  display: table-cell;
+}
+
+
+.tblhead-cal,
+.tbllist-cal {
+  width: 90px;
+}
+
+.tblhead-desc,
+.tbllist-desc {
+  width: 45%;
+}
+
+.tblhead-char,
+.tbllist-char {
+  width: 55%;
+}
+
+.tblhead-act,
+.tbllist-act {
+  width: 110px;
+  text-align: center;
+}
+
+.tbllist-cal {
+  font-size: 15px;
+  font-weight: 600;
+
+  > span {
+    display: block;
+    font-size: 18px;
+    color: #999;
+  }
+}
+
+.tbllist-desc {
+  padding: 12px 18px 0 0;
+
+  > section > label {
+    font-size: 26px;
+    font-weight: 400;
+    padding: 0 10px 4px 4px;
+  }
+
+  > section > span {
+    padding-bottom: 2px;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 16px;
+    color: #999;
+
+    > label {
+      color: #555;
+      font-weight: 400;
+      font-size: 18px;
+    }
+
+  }
+}
+
+
+
 
 // button revamp manifest
 .btn-primary {
@@ -418,6 +499,11 @@ body {
 
 
 // responsive style
+@media (min-width: 768px){
+
+}
+
+
 @media (min-width: 724px){
 
 }

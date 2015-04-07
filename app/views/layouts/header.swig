@@ -1,7 +1,7 @@
 <div class="header">
-  <nav class="navbar container" role="navigation">
+  <nav class="navbar" role="navigation">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#top-navbar-collapse">
+      <button type="button" class="navbar-toggle btn-primary" data-toggle="collapse" data-target="#top-navbar-collapse">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -25,7 +25,7 @@
     </div>
     <div class="collapse navbar-collapse" id="top-navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#" class="sidebar-toggle">About</a></li>
+        <li><a href="#">About</a></li>
         <li class="active"><a href="daftar.html">Daftar RanMor</a></li>
         <li class="dropdown">
           <a href="#" data-toggle="dropdown" id="signin">Signin</a>

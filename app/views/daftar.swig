@@ -56,15 +56,19 @@
     </div>
     <div class="tbllist clearfix">
       <div class="tbllist-cal">
-        8 April <span>2014</span>
+        8 December <span>2014</span>
       </div>
       <div class="tblwrap">
         <div class="tbllist-desc">
-          <label>L 899 JS</label>
-          <span>Toyota</span>
-          <label>Kijang Innova</label>
+          <section>
+            <label>L 899 JS</label>
+            <span>
+              Toyota&nbsp;
+              <label>Kijang Innova</label>
+            </span>
+          </section>
             <p>
-              kehilangan mobil kijang inova seri V silver metalik,nomor mesin : 2KDU123684, nomor rangka : MHFXR43G1C1009667, di surabaya daerah darmo tanggal 21 Februari 2015 pagi sekitar jam 2-3. HADIAH BESAR bagi yang menemukannya.
+              kehilangan mobil kijang inova seri V silver metalik, nomor mesin : 2KDU123684, nomor rangka : MHFXR43G1C1009667, di surabaya daerah darmo tanggal 21 Februari 2015 pagi sekitar jam 2-3. HADIAH BESAR bagi yang menemukannya.
             </p>
         </div>
         <div class="tbllist-char">
