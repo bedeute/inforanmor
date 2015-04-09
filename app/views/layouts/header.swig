@@ -26,7 +26,7 @@
     <div class="collapse navbar-collapse" id="top-navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#">About</a></li>
-        <li class="active"><a href="daftar.html">Daftar RanMor</a></li>
+        <li class="active"><a href="daftar-ranmor.html">Daftar RanMor</a></li>
         <li class="dropdown">
           <a href="#" data-toggle="dropdown" id="signin">Signin</a>
           <div class="dropdown-menu signin-form" role="menu" aria-labelledby="signin">
@@ -46,7 +46,7 @@
           </div>
         </li>
         <li style="color: #fff; padding: 14px 0;">|</li>
-        <li><a href="#">Daftar</a></li>
+        <li><a href="daftar.html">Daftar</a></li>
       </ul>
     </div>
   </nav>
