@@ -8,9 +8,8 @@
 {% endblock %}
 
 {% block main %}
-<div class="sidebar shrink">
+<div class="sidebar">
   <div class="sidebar-inner">
-    <a href="#" class="sidebar-toggle"><i class="fa fa-chevron-left"></i></a>
     <h3 style="margin-top: 2px;">Filter:</h3>
     <hr>
     <h3>Type</h3>
@@ -44,6 +43,7 @@
     </div>
   </div>
 </div>
+<a href="#" class="sidebar-toggle"><i class="fa fa-chevron-left"></i></a>
 <div class="mainbar">
   <div class="container">
     <div class="tblhead clearfix">

@@ -8,8 +8,8 @@
 (function($) {
   'use strict';
 
-  $('.sidebar-toggle').click(function () {
-
+  $('.sidebar-toggle').click(function (e) {
+    e.preventDefault();
     $('.sidebar').toggleClass('reveal shrink');
 
   });

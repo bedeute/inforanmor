@@ -36,7 +36,7 @@
   <!-- @endif -->
 </head>
 
-<body>
+<body class="">
   <div class="wrap">
 
     {% include "layouts/header.swig" %}

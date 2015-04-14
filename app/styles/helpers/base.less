@@ -254,6 +254,7 @@ body {
 .sidebar {
   position: absolute;
   left: 0;
+  z-index: 20;
   top: 69px;
   bottom: 0;
   margin-top: 0;
@@ -271,10 +272,13 @@ body {
 
   &.shrink {
     .translate(-190px,0);
-    &+.mainbar{margin-left: 10px;}
+    &~.mainbar{margin-left: 10px;}
 
-    .sidebar-toggle {
-      left: 190px;
+    + .sidebar-toggle {
+      left: 10px;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-left-color: transparent;
       .opacity(0.5);
       text-shadow: 0 -1px rgba(255, 255, 255, 0.2);
 
@@ -348,9 +352,10 @@ body {
 .sidebar-toggle {
   display: block;
   position: fixed;
+  top: 80px;
+  left: 156px;
   width: 32px;
   height: 32px;
-  left: 156px;
   border-radius: 6px;
   background-color: @dark-bg-color;
   border: 1px solid darken(@dark-bg-color, 3%);
@@ -359,6 +364,8 @@ body {
   line-height: 32px;
   color: #333B45;
   text-shadow: 0 1px rgba(255, 255, 255, 0.2);
+  .transition(left 0.18s ease);
+  z-index: 25;
 
   &:hover,
   &:focus {
@@ -375,7 +382,7 @@ body {
 //-------------------------
 .mainbar {
 
-  .sidebar + & {
+  .sidebar ~ & {
     margin-left: 200px;
     .transition(all 0.3s ease);
   }
@@ -516,14 +523,62 @@ body {
 
 
 // responsive style
-@media (min-width: 768px){
+
+@media screen and (max-width: 767px){
+  .header > .navbar {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .sidebar {
+
+    ~ .mainbar {
+      margin-left: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px){
+  .tblhead {display: none;}
+
+  .tbllist {
+    margin: 12px -15px;
+    padding: 0 15px 15px;
+    border-top: 1px solid @dark-bg-color;
+    border-bottom-color: transparent;
+  }
+
+  .tbllist-char,
+  .tbllist-act,
+  .tbllist-desc {
+    display: block;
+    width: 100%;
+  }
+
+  .tbllist-cal {
+    width: auto;
+    display: inline-block;
+    margin-left: -22px;
+    background-color: @dark-bg-color;
+    padding: 6px 50px 6px 22px;
+    position: relative;
+
+    &:before {
+      content: '';
+      border: 19px solid transparent;
+      border-color: #f9f9f9 #f9f9f9 transparent transparent;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    > span {
+      display: inline-block;
+    }
+  }
 
 }
 
-
-@media (min-width: 724px){
-
-}
 
 // vertical responsive style
 @media screen and ( max-height: 680px ){
